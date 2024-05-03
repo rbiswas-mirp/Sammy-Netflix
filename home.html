@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Netflix</title>
+    <link rel="shortcut icon" href="img/Logo-site.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="script.js" defer></script>
+</head>
+<body>
+
+<!--TOPO DA PAGINA, CABEÇARIO CONTENDO: LOGO/INICIO/SÉRIES/FILMES/(MINHA LISTA - APENAS NO PC) E TODOS OS LINKS REDIRECIONANDO PARA A PÁGINA PRINCIPAL-->
+
+    <header class="cabecario">
+        <ul class="cabecario__lista">
+            <li><img src="img/Nlogo.png" alt="Netflix logo" class="nlogo"><img src="img/Netflix_logo.png" alt="Netflix logo" class="cabecario__item container__logo sumir__mobile"></li>
+            <li class="cabecario__item"><a href="home.html" class="cabecario__link">Home</a></li>
+            <li class="cabecario__item"><a href="home.html" class="cabecario__link">TV Shows</a></li>
+            <li class="cabecario__item"><a href="home.html" class="cabecario__link">Movies</a></li>
+            <li class="cabecario__item mobile__sumir"><a href="home.html" class="cabecario__link">My List</a></li>
+        </ul>
+    </header>
+
+<!--FILME EM EXIBIÇÃO COM UMA BACKGROUND DO FILME(NO CELULAR É OUTRO BACKGROUND) JUNTO COM UM BOTÃO PARA ASSISTIR E UM PARA (MAIS INFORMAÇÕES - NÃO ESTÁ FUNCIONANDO, FUTURAMENTE ESTARÁ)-->
+
+    <section class="container__background">
+        <img src="img/Titulo.png" alt="Titulo" class="container__titulo">
+        <p class="container__texto__mobile">The critically acclaimed romance film,<br> with record sales at the box office,<br> considered one of the best romance films.</p>
+        <p class="container__texto mobile__sumir">Follow in this film the story of two university students<br> and all their moments together.<br> In this film, we have Samadrita and Rahul.</p>
+        <div class="container__botao">
+            <a href="the-first-love.html" class="botao__assistir"><img src="img/Play.png" class="play">Watch</a> 
+            <button class="botao__assistir info"><img src="img/info.png" class="play"><p class="mais__info">More Info</p></button>    
+        </div>
+    </section>
+
+<!--SEÇÃO CONTENDO FILMES DO ASSISTIR NOVAMENTE(OS FILMES SÃO COLOCADOS MANUALMENTE)-->
+
+    <section class="container">
+        <p class="container__texto">Watch Again</p>
+        <ul class="container__lista">
+            
+            <li class="container__video">
+                <a href="two-crazy-people.html">
+                    <img src="img/two-crazy-people.jpg" alt="Video" class="cropped">
+                    <div class="desc">Two Crazy People</div>
+                </a>
+            </li>
+
+            <li class="container__video">
+                <a href="my-shining-star.html">
+                    <img src="img/my-shining-star.jpg" alt="Video" class="cropped">
+                    <div class="desc">My Shining Star</div>
+                </a>
+            </li>
+
+            <li class="container__video">
+                <a href="the-princess-and-her-food.html">
+                    <img src="img/the-princess-and-her-food.jpg" alt="Video" class="cropped">
+                    <div class="desc">The princess and her food</div>
+                </a>
+            </li>
+
+            <li class="container__video">
+                <a href="filme4.html">
+                    <img src="img/video4.png" alt="Video" class="cropped">
+                    <div class="desc">Clube da Luta</div>
+                </a>
+            </li>
+        </ul>
+    </section>
+
+<!--SEÇÃO CONTENDO FILMES DA MINHA LISTA(OS FILMES SÃO COLOCADOS MANUALMENTE)-->
+
+    <section class="container">
+        <p class="container__texto">My List</p>
+        <ul class="container__lista">
+
+            <li class="container__video">
+                <a href="the-first-love.html">
+                    <img src="img/video5.png" alt="Video" class="cropped">
+                    <div class="desc">The First Love</div>
+                </a>
+            </li>
+
+            <li class="container__video">
+                <a href="filme4.html">
+                    <img src="img/video4.png" alt="Video" class="cropped">
+                    <div class="desc">Clube da Luta</div>
+                </a>
+            </li>
+
+            <li class="container__video">
+                <a href="my-shining-star.html">
+                    <img src="img/my-shining-star.jpg" alt="Video" class="cropped">
+                    <div class="desc">My Shining Star</div>
+                </a>
+            </li>
+
+        </ul>
+    </section>
+
+<!--SEÇÃO CONTENDO TODOS OS FILMES(OS FILMES SÃO COLOCADOS MANUALMENTE)-->
+
+    <section class="container">
+        <p class="container__texto">All movies</p>
+
+        <div id="carrosel">
+        <button type="button" id="btnleft"><img src="img/Carrosel-setae.png" alt="seta" class="botao__seta"></button>
+        <button type="button" id="btnright"><img src="img/Carrosel-setad.png" alt="seta" class="botao__seta"></button>
+
+        <div class="container__lista" id="container">
+
+            <div class="container__video carrossel_item">
+                <a href="two-crazy-people.html">
+                    <img src="img/two-crazy-people.jpg" alt="Video" class="cropped">
+                    <div class="desc">Two Crazy People</div>
+                </a>
+            </div>
+
+            <div class="container__video carrossel_item">
+                <a href="my-shining-star.html">
+                    <img src="img/my-shining-star.jpg" alt="Video" class="cropped">
+                    <div class="desc">My Shining Star</div>
+                </a>
+            </div>
+
+            <div class="container__video carrossel_item">
+                <a href="the-princess-and-her-food.html">
+                    <img src="img/the-princess-and-her-food.jpg" alt="Video" class="cropped">
+                    <div class="desc">The princess and her food</div>
+                </a>
+            </div>
+
+            <div class="container__video carrossel_item">
+                <a href="filme4.html">
+                    <img src="img/video4.png" alt="Video" class="cropped">
+                    <div class="desc">Clube da Luta</div>
+                </a>
+            </div>
+
+            <div class="container__video carrossel_item">
+                <a href="the-first-love.html">
+                    <img src="img/video5.png" alt="Video" class="cropped">
+                    <div class="desc">The First Love</div>
+                </a>
+            </div>
+
+            <div class="container__video carrossel_item">
+                <a href="filme4.html">
+                    <img src="img/video4.png" alt="Video" class="cropped">
+                    <div class="desc">Clube da Luta</div>
+                </a>
+            </div>
+        
+            <div id="limitador">limitador</div>
+        </div>
+        </div>
+
+    </section>
+
+<!--RODAPE DA PAGINA-->
+
+    <footer class="rodape">
+        <h2 class="rodape__texto">More beautiful memories coming soon <3</h2> 
+    </footer>
+</body>
+</html>
